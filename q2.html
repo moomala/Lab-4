@@ -7,11 +7,55 @@
 a) Write a short article with appropriate headings in html that describes the key differences between writing in google docs and in an html document.
 b) Use an embedded stylesheet to set the default text font face to a serif font and all heading text to sans serif.
     -->
+    <!-- b) -->
+    <style>
+        body {
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
 </head>
 
 <body>
     <section id="1">
-        <!-- put article here -->
+        <!-- a) -->
+        <article>
+            <h1>Google Docs vs. HTML</h1>
+            <p>
+                Google Docs and HTML can both be used to write text, but they work in very
+                different ways.
+            </p>
+
+            <h2>What You See vs. What You Write</h2>
+            <p>
+                Google Docs shows you the finished page as you type. To make a heading, you pick
+                it from a menu. In HTML, you write tags like <code>&lt;h1&gt;</code> and
+                <code>&lt;p&gt;</code>, and you only see the finished page when you open the file
+                in a browser.
+            </p>
+
+            <h2>Formatting</h2>
+            <p>
+                In Google Docs, you change fonts and colours with buttons on the toolbar. In HTML,
+                the tags describe what the content is, and the look is set separately with CSS.
+                This keeps content and presentation apart.
+            </p>
+
+            <h2>Where It's Used</h2>
+            <p>
+                Google Docs is made for documents that people share, edit together, and print.
+                HTML is made for web pages that open in any browser on any device.
+            </p>
+
+            <h2>Collaboration</h2>
+            <p>
+                Google Docs lets several people edit at once and leave comments. HTML files are
+                usually edited by one person at a time in a code editor.
+            </p>
+        </article>
     </section>
 </body>
 
