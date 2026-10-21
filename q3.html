@@ -8,10 +8,60 @@ Write an article using semantic markup, header, footer, main and section. In the
 Color the header with white text on a blue background, the footer with white text on a green background, the main portion with black text o a parchment colored background. 
 Make the nouns in the header and footer have a text weight of 600, while the rest of the text has a font-weight of 400.
     -->
-        
+    <style>
+        body, h1, p {
+            font-weight: 400;
+        }
+
+        header {
+            color: white;
+            background-color: blue;
+        }
+
+        footer {
+            color: white;
+            background-color: green;
+        }
+
+        main {
+            color: black;
+            background-color: #f1e9d2; /* parchment */
+        }
+
+        header .noun,
+        footer .noun {
+            font-weight: 600;
+        }
+    </style>
 </head>
 
 <body>
+    <header>
+        <h1>From <span class="noun">Type</span> to <span class="noun">Web</span></h1>
+    </header>
+
+    <main>
+        <article>
+            <section>
+                <p>
+                    Before computers, printers built pages by hand using small metal letters
+                    arranged in a frame, which was slow but gave them full control over every page.
+                    Desktop publishing moved this work onto the computer, letting designers place
+                    text and images on screen and make edits in seconds instead of hours, though the
+                    goal was still a fixed page, usually for print. HTML and CSS are made for the
+                    web instead: HTML describes what the content is, CSS controls how it looks, and
+                    the page adjusts to fit any screen. All three arrange text so it's easy to read,
+                    but typesetting and desktop publishing create fixed layouts where the designer
+                    decides exactly where everything goes, while HTML and CSS separate content from
+                    presentation and let the browser decide the final layout.
+                </p>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>By <span class="noun">Miranda Priatel</span></p>
+    </footer>
 </body>
 
 </html>
