@@ -3,4 +3,9 @@ html practice test
 
 TLDR;
 
-Use this as a template to answer the questions in the files
+[Question One] (q1.html)
+
+[Question Two] (q2.html)
+
+[Question Three] (q3.html)
+
